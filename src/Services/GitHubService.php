@@ -67,11 +67,12 @@ class GitHubService
 
     public function getLatestTag(?string $repository = null): string
     {
-        if (! $this->enabled) {
+        $repository = $repository ?? $this->repository;
+
+        if (! $this->enabled || $repository === null) {
             return $this->defaultVersion;
         }
 
-        $repository = $repository ?? $this->repository;
         $cacheKey = "filament-easy-footer.github.{$repository}.latest-tag";
 
         $cachedTag = $this->getCacheWithoutTags($cacheKey);
