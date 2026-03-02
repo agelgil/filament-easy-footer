@@ -146,8 +146,10 @@ class EasyFooterPlugin implements Plugin
     /**
      * Calculate the page load time
      */
-    protected function calculateLoadTime(float $startTime): string
+    protected function calculateLoadTime(): string
     {
+        $startTime = request()->server('REQUEST_TIME_FLOAT', microtime(true));
+
         return number_format(microtime(true) - $startTime, 3);
     }
 
