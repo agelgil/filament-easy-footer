@@ -73,11 +73,9 @@ class EasyFooterPlugin implements Plugin
             $githubService->disable();
         }
 
-        $startTime = $this->loadTimeEnabled ? microtime(true) : 0;
-
         $panel->renderHook(
             $this->getRenderHook(),
-            fn (): string => $this->renderFooter($startTime)
+            fn (): string => $this->renderFooter()
         );
     }
 
