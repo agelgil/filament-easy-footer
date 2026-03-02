@@ -1,8 +1,8 @@
 <?php
 
-namespace Devonab\FilamentEasyFooter;
+namespace Agelgil\FilamentEasyFooter;
 
-use Devonab\FilamentEasyFooter\Services\GitHubService;
+use Agelgil\FilamentEasyFooter\Services\GitHubService;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 use Illuminate\Support\HtmlString;

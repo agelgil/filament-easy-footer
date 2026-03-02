@@ -1,8 +1,8 @@
 <?php
 
-namespace Devonab\FilamentEasyFooter\Livewire;
+namespace Agelgil\FilamentEasyFooter\Livewire;
 
-use Devonab\FilamentEasyFooter\Services\GitHubService;
+use Agelgil\FilamentEasyFooter\Services\GitHubService;
 use Livewire\Component;
 
 class GitHubVersion extends Component

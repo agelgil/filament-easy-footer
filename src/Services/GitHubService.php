@@ -1,6 +1,6 @@
 <?php
 
-namespace Devonab\FilamentEasyFooter\Services;
+namespace Agelgil\FilamentEasyFooter\Services;
 
 use Exception;
 use Illuminate\Support\Facades\Cache;

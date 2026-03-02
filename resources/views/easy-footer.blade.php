@@ -59,7 +59,7 @@
     </span>
 
     @if($githubEnabled)
-        <livewire:devonab.filament-easy-footer.github-version
+        <livewire:agelgil.filament-easy-footer.github-version
             :show-logo="$showLogo"
             :show-url="$showUrl"
         />

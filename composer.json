@@ -1,22 +1,27 @@
 {
-    "name": "devonab/filament-easy-footer",
+    "name": "agelgil/filament-easy-footer",
     "description": "A simple plugin to display a customizable footer in your filament application!",
     "keywords": [
-        "Devonab",
+        "Agelgil",
         "laravel",
         "filament",
         "filament-php",
         "filament-easy-footer"
     ],
-    "homepage": "https://github.com/devonab/filament-easy-footer",
+    "homepage": "https://github.com/agelgil/filament-easy-footer",
     "support": {
-        "issues": "https://github.com/devonab/filament-easy-footer/issues",
-        "source": "https://github.com/devonab/filament-easy-footer"
+        "issues": "https://github.com/agelgil/filament-easy-footer/issues",
+        "source": "https://github.com/agelgil/filament-easy-footer"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": " Devonab",
+            "name": "Devonab",
+            "role": "Original Author",
+            "homepage": "https://github.com/Devonab"
+        },
+        {
+            "name": "Agelgil",
             "role": "Developer"
         }
     ],
@@ -37,12 +42,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Devonab\\FilamentEasyFooter\\": "src/"
+            "Agelgil\\FilamentEasyFooter\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Devonab\\FilamentEasyFooter\\Tests\\": "tests/"
+            "Agelgil\\FilamentEasyFooter\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -62,10 +67,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Devonab\\FilamentEasyFooter\\EasyFooterServiceProvider"
+                "Agelgil\\FilamentEasyFooter\\EasyFooterServiceProvider"
             ],
             "aliases": {
-                "FilamentEasyFooter": "Devonab\\FilamentEasyFooter\\Facades\\EasyFooter"
+                "FilamentEasyFooter": "Agelgil\\FilamentEasyFooter\\Facades\\EasyFooter"
             }
         }
     },

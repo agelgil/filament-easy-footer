@@ -1,16 +1,16 @@
 <?php
 
-namespace Devonab\FilamentEasyFooter\Facades;
+namespace Agelgil\FilamentEasyFooter\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Devonab\FilamentEasyFooter\EasyFooter
+ * @see \Agelgil\FilamentEasyFooter\EasyFooter
  */
 class EasyFooter extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Devonab\FilamentEasyFooter\EasyFooter::class;
+        return \Agelgil\FilamentEasyFooter\EasyFooter::class;
     }
 }

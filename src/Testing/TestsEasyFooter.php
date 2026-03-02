@@ -1,6 +1,6 @@
 <?php
 
-namespace Devonab\FilamentEasyFooter\Testing;
+namespace Agelgil\FilamentEasyFooter\Testing;
 
 use Livewire\Features\SupportTesting\Testable;
 

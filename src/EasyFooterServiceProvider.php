@@ -1,10 +1,10 @@
 <?php
 
-namespace Devonab\FilamentEasyFooter;
+namespace Agelgil\FilamentEasyFooter;
 
-use Devonab\FilamentEasyFooter\Livewire\GitHubVersion;
-use Devonab\FilamentEasyFooter\Services\GitHubService;
-use Devonab\FilamentEasyFooter\Testing\TestsEasyFooter;
+use Agelgil\FilamentEasyFooter\Livewire\GitHubVersion;
+use Agelgil\FilamentEasyFooter\Services\GitHubService;
+use Agelgil\FilamentEasyFooter\Testing\TestsEasyFooter;
 use Filament\Support\Facades\FilamentAsset;
 use Illuminate\Filesystem\Filesystem;
 use Livewire\Features\SupportTesting\Testable;
@@ -25,7 +25,7 @@ class EasyFooterServiceProvider extends PackageServiceProvider
             ->hasInstallCommand(function (InstallCommand $command) {
                 $command
                     ->publishConfigFile()
-                    ->askToStarRepoOnGitHub('devonab/filament-easy-footer');
+                    ->askToStarRepoOnGitHub('agelgil/filament-easy-footer');
             });
 
         $configFileName = $package->shortName();
@@ -55,7 +55,7 @@ class EasyFooterServiceProvider extends PackageServiceProvider
             );
         });
 
-        Livewire::component('devonab.filament-easy-footer.github-version', GitHubVersion::class);
+        Livewire::component('agelgil.filament-easy-footer.github-version', GitHubVersion::class);
 
         FilamentAsset::registerScriptData(
             $this->getScriptData(),
@@ -75,7 +75,7 @@ class EasyFooterServiceProvider extends PackageServiceProvider
 
     protected function getAssetPackageName(): ?string
     {
-        return 'devonab/filament-easy-footer';
+        return 'agelgil/filament-easy-footer';
     }
 
     /**

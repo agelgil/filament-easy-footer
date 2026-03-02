@@ -1,5 +1,5 @@
 <?php
 
-namespace Devonab\FilamentEasyFooter;
+namespace Agelgil\FilamentEasyFooter;
 
 class EasyFooter {}
