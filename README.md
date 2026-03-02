@@ -1,19 +1,19 @@
 #  Filament EasyFooter
 
 
-![Filament Easy Footer cover](https://raw.githubusercontent.com/Devonab/filament-easy-footer/main/art/cover.webp)
+![Filament Easy Footer cover](https://raw.githubusercontent.com/Agelgil/filament-easy-footer/main/art/cover.webp)
 
 
-[![Latest v2.x](https://img.shields.io/github/v/tag/devonab/filament-easy-footer?filter=v2.*&label=release%20v2.x&style=flat-square)](https://github.com/devonab/filament-easy-footer/releases)
-[![Tests](https://img.shields.io/github/actions/workflow/status/devonab/filament-easy-footer/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/devonab/filament-easy-footer/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![Code Style](https://img.shields.io/github/actions/workflow/status/devonab/filament-easy-footer/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/devonab/filament-easy-footer/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/devonab/filament-easy-footer.svg?style=flat-square)](https://packagist.org/packages/devonab/filament-easy-footer)
+[![Latest v2.x](https://img.shields.io/github/v/tag/agelgil/filament-easy-footer?filter=v2.*&label=release%20v2.x&style=flat-square)](https://github.com/agelgil/filament-easy-footer/releases)
+[![Tests](https://img.shields.io/github/actions/workflow/status/agelgil/filament-easy-footer/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/agelgil/filament-easy-footer/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![Code Style](https://img.shields.io/github/actions/workflow/status/agelgil/filament-easy-footer/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/agelgil/filament-easy-footer/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/agelgil/filament-easy-footer.svg?style=flat-square)](https://packagist.org/packages/agelgil/filament-easy-footer)
 
 | FilamentPHP | Package version | Branch                                                                          |
 |------------|-----------------|---------------------------------------------------------------------------------|
-| v3.x       | v1.x            | [filament-v3](https://github.com/Devonab/filament-easy-footer/tree/filament-v3) |
-| v4.x       | v2.x            | [main](https://github.com/Devonab/filament-easy-footer/tree/main)               |
-| v5.x       | v2.x            | [main](https://github.com/Devonab/filament-easy-footer/tree/main)               |
+| v3.x       | v1.x            | [filament-v3](https://github.com/agelgil/filament-easy-footer/tree/filament-v3) |
+| v4.x       | v2.x            | [main](https://github.com/agelgil/filament-easy-footer/tree/main)               |
+| v5.x       | v2.x            | [main](https://github.com/agelgil/filament-easy-footer/tree/main)               |
 
 
 This filament Plugin provides an easy and flexible way to add a customizable footer to your FilamentPHP application. This plugin integrates seamlessly with Filament's admin interface, enabling you to enhance your application's user experience with a good looking footer.
@@ -50,7 +50,7 @@ This filament Plugin provides an easy and flexible way to add a customizable foo
 First, you can start to install the package via composer:
 
 ```bash
-composer require devonab/filament-easy-footer:^2.0
+composer require agelgil/filament-easy-footer:^2.0
 ```
 
 You can publish the config file with. This file is needed if you want to change the default:
@@ -87,7 +87,7 @@ To start using this plugin, simply add it to the Filament provider's plugin arra
 
 
 ```php
-use Devonab\FilamentEasyFooter\EasyFooterPlugin;
+use Agelgil\FilamentEasyFooter\EasyFooterPlugin;
 
 ->plugins([
     EasyFooterPlugin::make(),
@@ -103,7 +103,7 @@ You will need to create a [custom theme](https://filamentphp.com/docs/4.x/stylin
 Once that is done, add this line to your theme.css file before compiling everything with `npm run build`.
 
 ```css
-@source '../../../../vendor/devonab/filament-easy-footer/resources/views/**/*';
+@source '../../../../vendor/agelgil/filament-easy-footer/resources/views/**/*';
 ```
 
 
@@ -116,7 +116,7 @@ Once that is done, add this line to your theme.css file before compiling everyth
 You can **enable or disable the footer** entirely using the following configuration:
 
 ```php
-use Devonab\FilamentEasyFooter\EasyFooterPlugin;
+use Agelgil\FilamentEasyFooter\EasyFooterPlugin;
 
 ->plugins([
     EasyFooterPlugin::make()
@@ -130,7 +130,7 @@ Without this configuration, the footer will be enabled by default.
 You can choose the **position of the footer** by using this configuration :
 
 ```php
-use Devonab\FilamentEasyFooter\EasyFooterPlugin;
+use Agelgil\FilamentEasyFooter\EasyFooterPlugin;
 
 ->plugins([
     EasyFooterPlugin::make()
@@ -145,44 +145,44 @@ You can choose between 3 positions, represented by their corresponding [render h
 - `sidebar.footer` : panels::sidebar.footer
 
 ```php
-use Devonab\FilamentEasyFooter\EasyFooterPlugin;
+use Agelgil\FilamentEasyFooter\EasyFooterPlugin;
 
 ->plugins([
     EasyFooterPlugin::make()
     ->withFooterPosition('footer'),
 ])
 ```
-![Filament Easy Footer position](https://raw.githubusercontent.com/Devonab/filament-easy-footer/main/art/position_footer.webp)
+![Filament Easy Footer position](https://raw.githubusercontent.com/Agelgil/filament-easy-footer/main/art/position_footer.webp)
 
 ```php
-use Devonab\FilamentEasyFooter\EasyFooterPlugin;
+use Agelgil\FilamentEasyFooter\EasyFooterPlugin;
 
 ->plugins([
     EasyFooterPlugin::make()
     ->withFooterPosition('sidebar'),
 ])
 ```
-![Filament Easy Footer sidebar position](https://raw.githubusercontent.com/Devonab/filament-easy-footer/main/art/position_sidebar.webp)
+![Filament Easy Footer sidebar position](https://raw.githubusercontent.com/Agelgil/filament-easy-footer/main/art/position_sidebar.webp)
 
 ```php
-use Devonab\FilamentEasyFooter\EasyFooterPlugin;
+use Agelgil\FilamentEasyFooter\EasyFooterPlugin;
 
 ->plugins([
     EasyFooterPlugin::make()
     ->withFooterPosition('sidebar.footer'),
 ])
 ```
-![Filament Easy Footer sidebar footer position](https://raw.githubusercontent.com/Devonab/filament-easy-footer/main/art/position_sidebar_footer.webp)
+![Filament Easy Footer sidebar footer position](https://raw.githubusercontent.com/Agelgil/filament-easy-footer/main/art/position_sidebar_footer.webp)
 
 ### Custom sentence
-![Filament Easy Footer custom sentence](https://raw.githubusercontent.com/Devonab/filament-easy-footer/main/art/custom_sentence.webp)
+![Filament Easy Footer custom sentence](https://raw.githubusercontent.com/Agelgil/filament-easy-footer/main/art/custom_sentence.webp)
 
 By default, the plugin will display the name of your application (configured from your .ENV), or the app_name key in the plugin config file,next to the copyright. You can change the phrase by publishing the plugin configuration file.
 
 If you prefer a more personalized approach, you can use the following method:
 
 ```php
-use Devonab\FilamentEasyFooter\EasyFooterPlugin;
+use Agelgil\FilamentEasyFooter\EasyFooterPlugin;
 
 ->plugins([
     EasyFooterPlugin::make()
@@ -194,7 +194,7 @@ The method accepts a string or HTMLString as a parameter.
 With this, you can get the result you want. For example, for the result shown in the image above :
 
 ```php
-use Devonab\FilamentEasyFooter\EasyFooterPlugin;
+use Agelgil\FilamentEasyFooter\EasyFooterPlugin;
 
 ->plugins([
     EasyFooterPlugin::make()
@@ -206,11 +206,11 @@ The authorized tags are as follows: `<strong><img><a><em><span><b><i><small>`.
 
 
 ### Show GitHub version
-![Filament Easy Footer github](https://raw.githubusercontent.com/Devonab/filament-easy-footer/main/art/github_version.webp)
+![Filament Easy Footer github](https://raw.githubusercontent.com/Agelgil/filament-easy-footer/main/art/github_version.webp)
 
 You can show the **GitHub version** of your application by using this configuration :
 ```php
-use Devonab\FilamentEasyFooter\EasyFooterPlugin;
+use Agelgil\FilamentEasyFooter\EasyFooterPlugin;
 
 ->plugins([
     EasyFooterPlugin::make()
@@ -237,12 +237,12 @@ return [
 If needed, you can generate a token [here](https://github.com/settings/personal-access-tokens). The token need to have at least the `read-only` permission on the "Contents" scope in Repository permissions.
 
 ### Load time
-![Filament Easy Footer load time](https://raw.githubusercontent.com/Devonab/filament-easy-footer/main/art/load_time.webp)
+![Filament Easy Footer load time](https://raw.githubusercontent.com/Agelgil/filament-easy-footer/main/art/load_time.webp)
 
 If you want to display the **page load time**, you can use this configuration :
 
 ```php
-use Devonab\FilamentEasyFooter\EasyFooterPlugin;
+use Agelgil\FilamentEasyFooter\EasyFooterPlugin;
 
 ->plugins([
     EasyFooterPlugin::make()
@@ -253,26 +253,26 @@ use Devonab\FilamentEasyFooter\EasyFooterPlugin;
 You can also display a prefix by using this configuration :
 
 ```php
-use Devonab\FilamentEasyFooter\EasyFooterPlugin;
+use Agelgil\FilamentEasyFooter\EasyFooterPlugin;
 
 ->plugins([
     EasyFooterPlugin::make()
     ->withLoadTime('This page loaded in'),
 ])
 ```
-![Filament Easy Footer loadtime prefix](https://raw.githubusercontent.com/Devonab/filament-easy-footer/main/art/loadtime_prefix.webp)
+![Filament Easy Footer loadtime prefix](https://raw.githubusercontent.com/Agelgil/filament-easy-footer/main/art/loadtime_prefix.webp)
 
 ### Custom logo with link
-![Filament Easy Footer custom logo](https://raw.githubusercontent.com/Devonab/filament-easy-footer/main/art/custom_logo.webp)
+![Filament Easy Footer custom logo](https://raw.githubusercontent.com/Agelgil/filament-easy-footer/main/art/custom_logo.webp)
 
 
 ### Custom logo with link
-![Filament Easy Footer custom logo](https://raw.githubusercontent.com/Devonab/filament-easy-footer/main/art/custom_logo.webp)
+![Filament Easy Footer custom logo](https://raw.githubusercontent.com/Agelgil/filament-easy-footer/main/art/custom_logo.webp)
 
 You can add a **custom logo** with optional link and text to the footer by using this configuration:
 
 ```php
-use Devonab\FilamentEasyFooter\EasyFooterPlugin;
+use Agelgil\FilamentEasyFooter\EasyFooterPlugin;
 
 ->plugins([
     EasyFooterPlugin::make()
@@ -286,7 +286,7 @@ use Devonab\FilamentEasyFooter\EasyFooterPlugin;
 You can customize the logo further with optional text and height:
 
 ```php
-use Devonab\FilamentEasyFooter\EasyFooterPlugin;
+use Agelgil\FilamentEasyFooter\EasyFooterPlugin;
 
 ->plugins([
     EasyFooterPlugin::make()
@@ -302,7 +302,7 @@ use Devonab\FilamentEasyFooter\EasyFooterPlugin;
 If you don't need the link, you can pass `null` for the second parameter:
 
 ```php
-use Devonab\FilamentEasyFooter\EasyFooterPlugin;
+use Agelgil\FilamentEasyFooter\EasyFooterPlugin;
 
 ->plugins([
     EasyFooterPlugin::make()
@@ -317,11 +317,11 @@ use Devonab\FilamentEasyFooter\EasyFooterPlugin;
 
 
 ### Links
-![Filament Easy Footer links](https://raw.githubusercontent.com/Devonab/filament-easy-footer/main/art/links.webp)
+![Filament Easy Footer links](https://raw.githubusercontent.com/Agelgil/filament-easy-footer/main/art/links.webp)
 
 You can add **custom links** (3 links max) to the footer by using this configuration :
 ```php
-use Devonab\FilamentEasyFooter\EasyFooterPlugin;
+use Agelgil\FilamentEasyFooter\EasyFooterPlugin;
 
 ->plugins([
     EasyFooterPlugin::make()
@@ -338,7 +338,7 @@ use Devonab\FilamentEasyFooter\EasyFooterPlugin;
 You can add a border on the top of the footer by using this configuration : 
 
 ```php
-use Devonab\FilamentEasyFooter\EasyFooterPlugin;
+use Agelgil\FilamentEasyFooter\EasyFooterPlugin;
 
 ->plugins([
     EasyFooterPlugin::make()
@@ -350,7 +350,7 @@ use Devonab\FilamentEasyFooter\EasyFooterPlugin;
 By default, the footer is also showed on the 3 auth pages : admin/login, admin/forgot-password and admin/register. You can hide it by using this configuration :
 
 ```php
-use Devonab\FilamentEasyFooter\EasyFooterPlugin;
+use Agelgil\FilamentEasyFooter\EasyFooterPlugin;
 
 ->plugins([
     EasyFooterPlugin::make()
@@ -360,7 +360,7 @@ use Devonab\FilamentEasyFooter\EasyFooterPlugin;
 
 If you would like to hide the footer on other pages, you can use this configuration :
 ```php
-use Devonab\FilamentEasyFooter\EasyFooterPlugin;
+use Agelgil\FilamentEasyFooter\EasyFooterPlugin;
 
 ->plugins([
     EasyFooterPlugin::make()
@@ -387,7 +387,7 @@ composer test
 
 ---
 
-Please see [CHANGELOG](https://github.com/Devonab/filament-easy-footer/releases) for more information on what has changed recently.
+Please see [CHANGELOG](https://github.com/agelgil/filament-easy-footer/releases) for more information on what has changed recently.
 
 ## Contributing
 
@@ -405,7 +405,8 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ---
 
-- [Devonab](https://github.com/Devonab)
+- [Devonab](https://github.com/Devonab) (Original Author)
+- [Agelgil](https://github.com/agelgil)
 - [All Contributors](../../contributors)
 
 ## License
