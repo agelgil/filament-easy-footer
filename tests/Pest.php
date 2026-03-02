@@ -1,5 +1,5 @@
 <?php
 
-use Devonab\FilamentEasyFooter\Tests\TestCase;
+use Agelgil\FilamentEasyFooter\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

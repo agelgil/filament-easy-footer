@@ -1,6 +1,6 @@
 <?php
 
-use Devonab\FilamentEasyFooter\Services\GitHubService;
+use Agelgil\FilamentEasyFooter\Services\GitHubService;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Http;
 beforeEach(function () {
     Cache::flush();
     Config::set('filament-easy-footer.github.token', 'fake-token');
-    Config::set('filament-easy-footer.github.repository', 'devonab/filament-easy-footer');
+    Config::set('filament-easy-footer.github.repository', 'agelgil/filament-easy-footer');
     Config::set('filament-easy-footer.github.cache_ttl', 3600);
 });
 

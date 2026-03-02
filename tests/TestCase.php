@@ -1,10 +1,10 @@
 <?php
 
-namespace Devonab\FilamentEasyFooter\Tests;
+namespace Agelgil\FilamentEasyFooter\Tests;
 
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
-use Devonab\FilamentEasyFooter\EasyFooterServiceProvider;
+use Agelgil\FilamentEasyFooter\EasyFooterServiceProvider;
 use Filament\Actions\ActionsServiceProvider;
 use Filament\FilamentServiceProvider;
 use Filament\Forms\FormsServiceProvider;
@@ -25,7 +25,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Devonab\\EasyFooter\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'Agelgil\\EasyFooter\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 
