@@ -115,7 +115,7 @@ class EasyFooterPlugin implements Plugin
      *
      * @throws Throwable
      */
-    protected function renderFooter(float $startTime): string
+    protected function renderFooter(): string
     {
         return view('filament-easy-footer::easy-footer', [
             'footerPosition' => $this->footerPosition,
@@ -127,7 +127,7 @@ class EasyFooterPlugin implements Plugin
             'logoText' => $this->logoText,
             'logoHeight' => $this->logoHeight,
             'borderTopEnabled' => $this->borderTopEnabled,
-            'loadTime' => $this->loadTimeEnabled ? $this->calculateLoadTime($startTime) : false,
+            'loadTime' => $this->loadTimeEnabled ? $this->calculateLoadTime() : false,
             'loadTimePrefix' => $this->loadTimePrefix,
             'links' => $this->links,
             'sentence' => $this->sentence,
